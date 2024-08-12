@@ -46,9 +46,13 @@
 
   <!-- Export build dependencies if needed -->
   <!-- ROS2 does not use build_export_depend, but this can be useful in some cases -->
-  <build_export_depend>rclcpp</build_export_depend>
-  <build_export_depend>rclpy</build_export_depend>
-  <build_export_depend>std_msgs</build_export_depend>
+<build_export_depend>rclcpp</build_export_depend>
+<build_export_depend>rclpy</build_export_depend>
+<build_export_depend>std_msgs</build_export_depend>
+<build_export_depend>dynamic_reconfigure</build_export_depend> <!-- Corrected tag -->
+<build_export_depend>eigen3_cmake_module</build_export_depend>
+<build_export_depend>sensor_msgs</build_export_depend>
+<build_export_depend>realtime_tools</build_export_depend>
 
   <!-- Runtime dependencies -->
   <exec_depend>rclcpp</exec_depend>
@@ -64,3 +68,4 @@
     <!-- Any other export information can go here -->
   </export>
 </package>
+
