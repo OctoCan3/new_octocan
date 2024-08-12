@@ -1,85 +1,83 @@
 cmake_minimum_required(VERSION 3.5)
 project(nac)
 
-# Compile as C++11
+# Specify the C++ standard
 add_compile_options(-std=c++11)  # ROS2 supports C++11, so we specify it here
 
-# Converted by ChatGPT
-# Find ament_cmake and other dependencies
-# In ROS2, `ament_cmake` replaces `catkin` as the build system
-find_package(ament_cmake REQUIRED)  # Essential for ROS2 packages
-find_package(rclcpp REQUIRED)       # Replaces roscpp in ROS2
-find_package(std_msgs REQUIRED)     # Standard messages (same name in ROS2)
-find_package(geometry_msgs REQUIRED) # Geometry messages (same name in ROS2)
-find_package(tf2 REQUIRED)          # Replaces tf in ROS2
-find_package(tf2_ros REQUIRED)      # Replaces tf_ros in ROS2
-find_package(sensor_msgs REQUIRED) # Sensor messages (same name in ROS2)
-find_package(Eigen3 REQUIRED)       # Eigen3 usage is consistent between ROS1 and ROS2
-find_package(realtime_tools REQUIRED) # Replaces realtime_tools in ROS2
+# Find required packages using ament instead of catkin used in ROS1.
+# ament_cmake is the build system replacement for catkin in ROS2.
+find_package(ament_cmake REQUIRED)
 
-# If using dynamic reconfigure parameters, handle with ROS2 parameters instead
-# ROS2 uses different mechanisms for parameters
+# Find the rclcpp package which replaces the roscpp package from ROS1.
+find_package(rclcpp REQUIRED)
 
-# Declare messages, services, and actions if used
-# ROS2 uses `rosidl_generate_interfaces()` for custom messages, services, and actions
-# Uncomment and specify files as needed
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   "msg/Message1.msg"
-#   "srv/Service1.srv"
-#   "action/Action1.action"
-#   DEPENDENCIES std_msgs
-# )
+# The std_msgs and geometry_msgs packages have the same name in ROS1 and ROS2.
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-# Catkin-specific configuration is replaced with ament
-# `ament_package()` is used to register the package
-catkin_package(
-  INCLUDE_DIRS include         # Include directories for header files
-  LIBRARIES nac                 # Libraries to be exported
-  CATKIN_DEPENDS dynamic_reconfigure ecl_threads realtime_tools roscpp rospy # ROS2 dependencies (update to ROS2 equivalents)
-  DEPENDS eigen                 # External dependencies
-)
+# The tf2 and tf2_ros packages replace the tf package from ROS1.
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 
-# Build configuration
+# sensor_msgs package has the same name in ROS1 and ROS2.
+find_package(sensor_msgs REQUIRED)
+
+# Eigen3 is used for matrix and vector operations, similar usage in both ROS versions.
+find_package(Eigen3 REQUIRED)
+
+# Realtime_tools, if used, must be checked for compatibility in ROS2 environments.
+find_package(realtime_tools REQUIRED)
+
+# Include directories
 include_directories(
-  include                       # Local include directory
-  ${catkin_INCLUDE_DIRS}        # ROS1-specific, replace with ROS2 equivalents
-  ${Eigen3_INCLUDE_DIRS}        # Eigen3 include directories
+  include
+  ${EIGEN3_INCLUDE_DIRS}  # Eigen3 headers are included similarly in ROS1 and ROS2.
 )
 
-# Declare a C++ library
-# In ROS2, use `ament_target_dependencies()` to link dependencies
+# Declare a C++ library, linking it against the ROS2 dependencies.
 add_library(${PROJECT_NAME} src/nac_nn_two.cpp)
 ament_target_dependencies(${PROJECT_NAME}
-  rclcpp std_msgs geometry_msgs tf2 tf2_ros sensor_msgs Eigen3 realtime_tools
+  rclcpp
+  std_msgs
+  geometry_msgs
+  tf2
+  tf2_ros
+  sensor_msgs
+  Eigen3
+  realtime_tools
 )
 
-# Optionally declare a C++ executable
-# Uncomment and configure if needed
+# Optionally declare a C++ executable, showing how executables are managed in ROS2.
 # add_executable(${PROJECT_NAME}_node src/nac_node.cpp)
 # ament_target_dependencies(${PROJECT_NAME}_node
-#   rclcpp std_msgs geometry_msgs tf2 tf2_ros sensor_msgs Eigen3 realtime_tools
+#   rclcpp
+#   std_msgs
+#   geometry_msgs
+#   tf2
+#   tf2_ros
+#   sensor_msgs
+#   Eigen3
+#   realtime_tools
 # )
 # target_link_libraries(${PROJECT_NAME}_node ${PROJECT_NAME})
 
-# Installation rules
+# Installation rules for libraries and executables, similar to ROS1 but using ROS2's ament_cmake.
 install(TARGETS ${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
 )
-install(DIRECTORY include/nac_controller/
+install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME}
   FILES_MATCHING PATTERN "*.h"
 )
 
-# Testing configuration
-# Use `ament_add_gtest()` and `ament_add_nosetests()` for ROS2 testing
-# Uncomment and configure if using tests
+# Uncomment below lines for adding tests using ament in ROS2.
 # ament_add_gtest(${PROJECT_NAME}-test test/test_nac.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
-# ament_add_nosetests(test)
 
-ament_package()  # Registers the package with ament
+# Registers the package with ament, essential for ROS2 packages.
+ament_package()
 
