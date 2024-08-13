@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.5)
 project(nac)
 
 # Specify the C++ standard
-add_compile_options(-std=c++11)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
 # Find packages
 find_package(ament_cmake REQUIRED)
