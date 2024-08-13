@@ -2,27 +2,26 @@ cmake_minimum_required(VERSION 3.5)
 project(nac)
 
 # Specify the C++ standard
-add_compile_options(-std=c++11)  # ROS2 supports C++11, so we specify it here
+add_compile_options(-std=c++11)
 
-# Find required packages using ament instead of catkin used in ROS1.
-# ament_cmake is the build system replacement for catkin in ROS2.
+# Find packages
 find_package(ament_cmake REQUIRED)
-
-# Find the rclcpp package which replaces the roscpp package from ROS1.
 find_package(rclcpp REQUIRED)
-
-# The std_msgs and geometry_msgs packages have the same name in ROS1 and ROS2.
+find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-
-# The tf2 and tf2_ros packages replace the tf package from ROS1.
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
-
-# sensor_msgs package has the same name in ROS1 and ROS2.
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(action_msgs REQUIRED)
+find_package(eigen3_cmake_module REQUIRED)
+find_package(kdl_parser REQUIRED)
 find_package(sensor_msgs REQUIRED)
-
-# Eigen3 is used for matrix and vector operations, similar usage in both ROS versions.
+find_package(realtime_tools REQUIRED)
+find_package(rosbag2_storage REQUIRED)
+find_package(rosbag2_transport REQUIRED)
+# find_package(octocan REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 # Realtime_tools, if used, must be checked for compatibility in ROS2 environments.
@@ -37,14 +36,26 @@ include_directories(
 # Declare a C++ library, linking it against the ROS2 dependencies.
 add_library(${PROJECT_NAME} src/nac_nn_two.cpp)
 ament_target_dependencies(${PROJECT_NAME}
-  rclcpp
+  rclcpp #roscpp -> rclcpp
+  rclpy  #rclpy -> rospy
   std_msgs
   geometry_msgs
-  tf2
-  tf2_ros
+  tf2  #tf->tf2
+  tf2_ros            # tf_conversions
+  tf2_geometry_msgs  # tf_conversions
+  std_srvs
+  action_msgs        # actionlib
+  eigen3_cmake_module # eigen_conversions]
+  kdl_parser 
   sensor_msgs
-  Eigen3
+  # no need for cmake_modules
   realtime_tools
+  rosbag2_storage    #rosbag
+  rosbag2_transport   #rosbag
+  #octocan
+  #ecl_threads -> rclcpp
+  #dynamic_reconfigure -> rclcpp
+  Eigen3
 )
 
 # Optionally declare a C++ executable, showing how executables are managed in ROS2.
@@ -80,4 +91,3 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 # Registers the package with ament, essential for ROS2 packages.
 ament_package()
-
