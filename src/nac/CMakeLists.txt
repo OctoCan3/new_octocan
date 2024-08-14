@@ -23,7 +23,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(realtime_tools REQUIRED)
 find_package(rosbag2_storage REQUIRED)
 find_package(rosbag2_transport REQUIRED)
-# find_package(octocan REQUIRED)
+find_package(octocan REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 # Realtime_tools, if used, must be checked for compatibility in ROS2 environments.
@@ -54,7 +54,7 @@ ament_target_dependencies(${PROJECT_NAME}
   realtime_tools
   rosbag2_storage    #rosbag
   rosbag2_transport   #rosbag
-  #octocan
+  octocan
   #ecl_threads -> rclcpp
   #dynamic_reconfigure -> rclcpp
   Eigen3

@@ -1,0 +1,70 @@
+[0.012s] Invoking command in '/media/flora/myros/new_re2_ws/build/octocan': /usr/bin/cmake /media/flora/myros/new_re2_ws/src/octocan -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/media/flora/myros/new_re2_ws/install/octocan
+[0.083s] -- The C compiler identification is GNU 11.4.0
+[0.152s] -- The CXX compiler identification is GNU 11.4.0
+[0.161s] -- Detecting C compiler ABI info
+[0.253s] -- Detecting C compiler ABI info - done
+[0.260s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.260s] -- Detecting C compile features
+[0.261s] -- Detecting C compile features - done
+[0.264s] -- Detecting CXX compiler ABI info
+[0.368s] -- Detecting CXX compiler ABI info - done
+[0.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.377s] -- Detecting CXX compile features
+[0.377s] -- Detecting CXX compile features - done
+[0.381s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.563s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.683s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.747s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.755s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.769s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.785s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.808s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.872s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.876s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.906s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.920s] -- Looking for pthread.h
+[1.017s] -- Looking for pthread.h - found
+[1.017s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.115s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.116s] -- Found Threads: TRUE  
+[1.253s] -- Configuring done
+[1.262s] -- Generating done
+[1.264s] [33mCMake Warning:
+[1.264s]   Manually-specified variables were not used by the project:
+[1.264s] 
+[1.264s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.264s] 
+[1.264s] [0m
+[1.264s] -- Build files have been written to: /media/flora/myros/new_re2_ws/build/octocan
+[1.275s] Invoked command in '/media/flora/myros/new_re2_ws/build/octocan' returned '0': /usr/bin/cmake /media/flora/myros/new_re2_ws/src/octocan -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/media/flora/myros/new_re2_ws/install/octocan
+[1.277s] Invoking command in '/media/flora/myros/new_re2_ws/build/octocan': /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/octocan -- -j16 -l16
+[1.346s] [ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/skintalk.c.o[0m
+[1.346s] [ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/profile.c.o[0m
+[1.346s] [ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/layout.c.o[0m
+[1.458s] [100%] [32m[1mLinking C static library liboctocan.a[0m
+[1.501s] [100%] Built target octocan
+[1.516s] Invoked command in '/media/flora/myros/new_re2_ws/build/octocan' returned '0': /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/octocan -- -j16 -l16
+[1.622s] Invoking command in '/media/flora/myros/new_re2_ws/build/octocan': /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/octocan
+[1.631s] -- Install configuration: ""
+[1.631s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.sh
+[1.631s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.dsv
+[1.631s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/lib/liboctocan.a
+[1.632s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/package_run_dependencies/octocan
+[1.632s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/parent_prefix_path/octocan
+[1.632s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.sh
+[1.632s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.dsv
+[1.633s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.sh
+[1.633s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.dsv
+[1.633s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.bash
+[1.633s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.sh
+[1.634s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.zsh
+[1.634s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.dsv
+[1.634s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.dsv
+[1.634s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/packages/octocan
+[1.634s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.635s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_libraries-extras.cmake
+[1.635s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.635s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig.cmake
+[1.635s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig-version.cmake
+[1.636s] -- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.xml
+[1.638s] Invoked command in '/media/flora/myros/new_re2_ws/build/octocan' returned '0': /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/octocan

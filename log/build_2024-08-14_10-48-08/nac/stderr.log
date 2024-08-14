@@ -1,0 +1,9 @@
+[33mCMake Warning at /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_include_directories-extras.cmake:11 (message):
+  Package 'octocan' exports the include directory
+  '/media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/../../../include'
+  which doesn't exist
+Call Stack (most recent call first):
+  /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig.cmake:41 (include)
+  CMakeLists.txt:26 (find_package)
+
+[0m

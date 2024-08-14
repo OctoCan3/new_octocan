@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnac.a CMakeFiles/nac.dir/src/nac_nn_two.cpp.o
+/usr/bin/ranlib libnac.a

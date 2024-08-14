@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target nac[0m
+[100%] Built target nac
+-- Install configuration: ""
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/lib/libnac.a
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/package_run_dependencies/nac
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/parent_prefix_path/nac
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/ament_prefix_path.sh
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/ament_prefix_path.dsv
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/path.sh
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/path.dsv
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.bash
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.sh
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.zsh
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/nac/share/nac/package.dsv
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/packages/nac
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/cmake/nacConfig.cmake
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/cmake/nacConfig-version.cmake
+-- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/package.xml

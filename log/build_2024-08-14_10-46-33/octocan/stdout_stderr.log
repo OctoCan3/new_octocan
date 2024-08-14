@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+-- Build files have been written to: /media/flora/myros/new_re2_ws/build/octocan
+[ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/skintalk.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/profile.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/octocan.dir/src/layout.c.o[0m
+[100%] [32m[1mLinking C static library liboctocan.a[0m
+[100%] Built target octocan
+-- Install configuration: ""
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.sh
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/lib/liboctocan.a
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/package_run_dependencies/octocan
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/parent_prefix_path/octocan
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.sh
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.sh
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.bash
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.sh
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.zsh
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.dsv
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/packages/octocan
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig.cmake
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig-version.cmake
+-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.xml

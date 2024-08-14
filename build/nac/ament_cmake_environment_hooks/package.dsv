@@ -1,0 +1,4 @@
+source;share/nac/local_setup.bash
+source;share/nac/local_setup.dsv
+source;share/nac/local_setup.sh
+source;share/nac/local_setup.zsh

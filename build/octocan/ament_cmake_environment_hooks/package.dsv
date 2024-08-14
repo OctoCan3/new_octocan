@@ -1,0 +1,4 @@
+source;share/octocan/local_setup.bash
+source;share/octocan/local_setup.dsv
+source;share/octocan/local_setup.sh
+source;share/octocan/local_setup.zsh

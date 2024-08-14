@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboctocan.a CMakeFiles/octocan.dir/src/skintalk.c.o CMakeFiles/octocan.dir/src/profile.c.o CMakeFiles/octocan.dir/src/layout.c.o
+/usr/bin/ranlib liboctocan.a

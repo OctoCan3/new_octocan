@@ -1,0 +1,4 @@
+Invoking command in '/media/flora/myros/new_re2_ws/build/octocan': /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/octocan -- -j16 -l16
+Invoked command in '/media/flora/myros/new_re2_ws/build/octocan' returned '0': /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/octocan -- -j16 -l16
+Invoking command in '/media/flora/myros/new_re2_ws/build/octocan': /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/octocan
+Invoked command in '/media/flora/myros/new_re2_ws/build/octocan' returned '0': /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/octocan

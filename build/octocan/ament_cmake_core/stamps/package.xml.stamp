@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>octocan</name>
+  <version>0.0.1</version>
+  <description>The octocan package</description>
+
+  <maintainer email="jordan@example.com">Jordan</maintainer>
+
+  <license>BSD-3-Clause</license>
+
+  <!-- Documentation and source code repositories -->
+  <!-- Example URLs:
+  <url type="website">http://example.com/octocan</url>
+  <url type="repository">https://github.com/octocan/octocan</url>
+  <url type="bugtracker">https://github.com/octocan/octocan/issues</url>
+  -->
+
+  <!-- Authors are optional and can be added as needed -->
+  <!-- Example author:
+  <author email="contributor@example.com">Contributor Name</author>
+  -->
+
+  <!-- Build and execution dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <!-- Additional dependencies, uncomment as needed:
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  -->
+
+  <!-- Build and build export dependencies, if needed:
+  <build_depend>ament_cmake_python</build_depend>
+  <build_export_depend>ament_cmake_python</build_export_depend>
+  -->
+
+  <!-- Test dependencies, if needed:
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  -->
+
+  <!-- Documentation dependencies, if needed:
+  <doc_depend>doxygen</doc_depend>
+  -->
+
+  <!-- Export tag for other unspecified tags and interfaces -->
+  <export>
+    <!-- metapackages, rmw implementations, or other tools can request additional information be placed here -->
+  </export>
+</package>
