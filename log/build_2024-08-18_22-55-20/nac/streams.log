@@ -1,0 +1,22 @@
+[0.014s] Invoking command in '/media/flora/myros/new_re2_ws/build/nac': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/nac -- -j16 -l16
+[0.090s] [100%] Built target nac
+[0.106s] Invoked command in '/media/flora/myros/new_re2_ws/build/nac' returned '0': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/nac -- -j16 -l16
+[0.186s] Invoking command in '/media/flora/myros/new_re2_ws/build/nac': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/nac
+[0.196s] -- Install configuration: ""
+[0.196s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/lib/libnac.a
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/package_run_dependencies/nac
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/parent_prefix_path/nac
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/ament_prefix_path.sh
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/ament_prefix_path.dsv
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/path.sh
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/environment/path.dsv
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.bash
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.sh
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.zsh
+[0.197s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/local_setup.dsv
+[0.197s] -- Installing: /media/flora/myros/new_re2_ws/install/nac/share/nac/package.dsv
+[0.198s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/ament_index/resource_index/packages/nac
+[0.198s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/cmake/nacConfig.cmake
+[0.198s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/cmake/nacConfig-version.cmake
+[0.198s] -- Up-to-date: /media/flora/myros/new_re2_ws/install/nac/share/nac/package.xml
+[0.199s] Invoked command in '/media/flora/myros/new_re2_ws/build/nac' returned '0': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake --install /media/flora/myros/new_re2_ws/build/nac

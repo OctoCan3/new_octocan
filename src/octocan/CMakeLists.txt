@@ -31,7 +31,6 @@ find_package(rclcpp REQUIRED)
 ###################################
 ## ament specific configuration  ##
 ###################################
-ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
 ament_export_dependencies(rclcpp)
 

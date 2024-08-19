@@ -122,17 +122,17 @@ int main(int argc, char **argv){
     ros::Rate loop_rate(300);
     setupMatrices();
     ros::Duration(5.0).sleep();
-    ros::Publisher joint_command_publisher = n.advertise<sensor_msgs::JointState>("/hebiros/" + group_name + "/command/joint_state",1);
+    //ros::Publisher joint_command_publisher = n.advertise<sensor_msgs::JointState>("/hebiros/" + group_name + "/command/joint_state",1);
     
-    ros::Subscriber feedback_subscriber = n.subscribe("/hebiros/" + group_name + "/feedback/joint_state", 1, joint_callback);
+    //ros::Subscriber feedback_subscriber = n.subscribe("/hebiros/" + group_name + "/feedback/joint_state", 1, joint_callback);
     ros::Subscriber cart_subscriber = n.subscribe("/nac_input", 1, cart_callback);
     
-    joint_command_msg.name.push_back( "ARNA/Shoulder_Yaw" );   // [0]
-    joint_command_msg.name.push_back( "ARNA/Shoulder_Pitch" ); // [1]
-    joint_command_msg.name.push_back( "ARNA/Upper_Arm_Roll" ); // [2]
-    joint_command_msg.name.push_back( "ARNA/Elbow_Pitch" );    // [3]
-    joint_command_msg.name.push_back( "ARNA/Wrist_Roll" );     // [4]
-    joint_command_msg.name.push_back( "ARNA/Wrist_Pitch" );    // [5]
+    //joint_command_msg.name.push_back( "ARNA/Shoulder_Yaw" );   // [0]
+    //joint_command_msg.name.push_back( "ARNA/Shoulder_Pitch" ); // [1]
+    //joint_command_msg.name.push_back( "ARNA/Upper_Arm_Roll" ); // [2]
+    //joint_command_msg.name.push_back( "ARNA/Elbow_Pitch" );    // [3]
+    //joint_command_msg.name.push_back( "ARNA/Wrist_Roll" );     // [4]
+    //joint_command_msg.name.push_back( "ARNA/Wrist_Pitch" );    // [5]
     
     //joint_command_msg.position.resize( NUMBER_OF_JOINTS ); // Use position commands
     joint_command_msg.effort.resize( NUMBER_OF_JOINTS );
@@ -154,7 +154,7 @@ int main(int argc, char **argv){
 							    X_m   ,
                                 Xd_m  ,
                                 Xdd_m ,
-                                userForce   ,			// Human force
+                                userForce   ,			// Human force = 0
                                 jointTorqueValue  );		// Output
    
         

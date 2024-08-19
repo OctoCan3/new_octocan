@@ -1,0 +1,32 @@
+[0.013s] Invoking command in '/media/flora/myros/new_re2_ws/build/nac': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake --build /media/flora/myros/new_re2_ws/build/nac -- -j16 -l16
+[0.048s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.205s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.238s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.241s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.247s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.271s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.307s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.308s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.328s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.387s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.388s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.401s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[0.405s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.488s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.491s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.492s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.494s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.504s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[0.507s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.525s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[0.535s] -- Found rosbag2_storage: 0.15.12 (/opt/ros/humble/share/rosbag2_storage/cmake)
+[0.562s] -- Found rosbag2_transport: 0.15.12 (/opt/ros/humble/share/rosbag2_transport/cmake)
+[0.599s] -- Found octocan: 0.0.1 (/media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake)
+[0.687s] -- Configuring done
+[0.708s] -- Generating done
+[0.711s] -- Build files have been written to: /media/flora/myros/new_re2_ws/build/nac
+[0.751s] [35m[1mConsolidate compiler generated dependencies of target nac[0m
+[0.773s] [ 50%] [32mBuilding CXX object CMakeFiles/nac.dir/src/nac_nn_two.cpp.o[0m
+[6.815s] [100%] [32m[1mLinking CXX static library libnac.a[0m
+[6.947s] [100%] Built target nac

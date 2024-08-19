@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/media/flora/myros/new_re2_ws/build/re2_flexiforce': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake /media/flora/myros/new_re2_ws/src/re2_flexiforce -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/media/flora/myros/new_re2_ws/install/re2_flexiforce
+[0.028s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.186s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.190s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.190s]   Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake
+[0.190s]   --help-policy CMP0057" for policy details.  Use the cmake_policy command to
+[0.190s]   set the policy and suppress this warning.
+[0.191s] 
+[0.191s]   IN_LIST will be interpreted as an operator when the policy is set to NEW.
+[0.191s]   Since the policy is not set the OLD behavior will be used.
+[0.191s] Call Stack (most recent call first):
+[0.191s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:34 (list_append_unique)
+[0.191s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[0.191s]   CMakeLists.txt:13 (find_package)
+[0.191s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.191s] [0m
+[0.192s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.192s]   if given arguments:
+[0.192s] 
+[0.192s]     "NOT" "element" "IN_LIST" "rclcpp_INCLUDE_DIRS"
+[0.192s] 
+[0.192s]   Unknown arguments specified
+[0.192s] Call Stack (most recent call first):
+[0.192s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:34 (list_append_unique)
+[0.192s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[0.192s]   CMakeLists.txt:13 (find_package)
+[0.192s] 
+[0.192s] [0m
+[0.193s] -- Configuring incomplete, errors occurred!
+[0.193s] See also "/media/flora/myros/new_re2_ws/build/re2_flexiforce/CMakeFiles/CMakeOutput.log".
+[0.197s] Invoked command in '/media/flora/myros/new_re2_ws/build/re2_flexiforce' returned '1': CMAKE_PREFIX_PATH=/media/flora/myros/new_re2_ws/install/octocan:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig ROS_PACKAGE_PATH=/media/flora/myros/new_re2_ws/install/octocan/share /usr/bin/cmake /media/flora/myros/new_re2_ws/src/re2_flexiforce -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/media/flora/myros/new_re2_ws/install/re2_flexiforce

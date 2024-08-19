@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:40 (find_package):
+  By not providing "Findtrac_ik_lib.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "trac_ik_lib", but CMake did not find one.
+
+  Could not find a package configuration file provided by "trac_ik_lib" with
+  any of the following names:
+
+    trac_ik_libConfig.cmake
+    trac_ik_lib-config.cmake
+
+  Add the installation prefix of "trac_ik_lib" to CMAKE_PREFIX_PATH or set
+  "trac_ik_lib_DIR" to a directory containing one of the above files.  If
+  "trac_ik_lib" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m

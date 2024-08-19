@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000966] (octocan) JobQueued: {'identifier': 'octocan', 'dependencies': OrderedDict()}
+[0.001033] (nac) JobQueued: {'identifier': 'nac', 'dependencies': OrderedDict([('octocan', '/media/flora/myros/new_re2_ws/install/octocan')])}
+[0.001064] (re2_flexiforce) JobQueued: {'identifier': 're2_flexiforce', 'dependencies': OrderedDict([('octocan', '/media/flora/myros/new_re2_ws/install/octocan')])}
+[0.001089] (octocan) JobStarted: {'identifier': 'octocan'}
+[0.011801] (octocan) JobProgress: {'identifier': 'octocan', 'progress': 'cmake'}
+[0.012456] (octocan) JobProgress: {'identifier': 'octocan', 'progress': 'build'}
+[0.013298] (octocan) Command: {'cmd': ['/usr/bin/cmake', '--build', '/media/flora/myros/new_re2_ws/build/octocan', '--', '-j16', '-l16'], 'cwd': '/media/flora/myros/new_re2_ws/build/octocan', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'flora'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/media/flora/myros/indy-ros2/install/indy_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/flora'), ('OLDPWD', '/media/flora/myros/new_re2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('GTK_MODULES', 'gail:atk-bridge'), ('SDL_IM_MODULE', 'fcitx'), ('GLFW_IM_MODULE', 'ibus'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/media/flora/myros/indy-ros2/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'flora'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'flora'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/flora/gems/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt/ros/humble/bin:/home/flora/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/flora/.local/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/wzhou-laptop:@/tmp/.ICE-unix/1706,unix/wzhou-laptop:/tmp/.ICE-unix/1706'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0fe1ca7_c6b3_4a7f_ad9d_f300de9405e4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C042R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.969'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/flora/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/media/flora/myros/new_re2_ws/build/octocan'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/media/flora/myros/indy-ros2/install/indy_moveit/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_interfaces/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description')]), 'shell': False}
+[0.049648] (octocan) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099731] (-) TimerEvent: {}
+[0.200040] (octocan) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.200292] (-) TimerEvent: {}
+[0.233697] (octocan) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.236456] (octocan) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.243000] (octocan) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.253519] (octocan) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.267026] (octocan) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300392] (-) TimerEvent: {}
+[0.302962] (octocan) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.304544] (octocan) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.324578] (octocan) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.400816] (-) TimerEvent: {}
+[0.472303] (octocan) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.485913] (octocan) StdoutLine: {'line': b'-- Generating done\n'}
+[0.488592] (octocan) StdoutLine: {'line': b'-- Build files have been written to: /media/flora/myros/new_re2_ws/build/octocan\n'}
+[0.500933] (-) TimerEvent: {}
+[0.523468] (octocan) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target octocan\x1b[0m\n'}
+[0.541833] (octocan) StdoutLine: {'line': b'[100%] Built target octocan\n'}
+[0.557979] (octocan) CommandEnded: {'returncode': 0}
+[0.601091] (-) TimerEvent: {}
+[0.648717] (octocan) JobProgress: {'identifier': 'octocan', 'progress': 'install'}
+[0.662465] (octocan) Command: {'cmd': ['/usr/bin/cmake', '--install', '/media/flora/myros/new_re2_ws/build/octocan'], 'cwd': '/media/flora/myros/new_re2_ws/build/octocan', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'flora'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/media/flora/myros/indy-ros2/install/indy_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/flora'), ('OLDPWD', '/media/flora/myros/new_re2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('GTK_MODULES', 'gail:atk-bridge'), ('SDL_IM_MODULE', 'fcitx'), ('GLFW_IM_MODULE', 'ibus'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/media/flora/myros/indy-ros2/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'flora'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'flora'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/flora/gems/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt/ros/humble/bin:/home/flora/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/flora/.local/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/wzhou-laptop:@/tmp/.ICE-unix/1706,unix/wzhou-laptop:/tmp/.ICE-unix/1706'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0fe1ca7_c6b3_4a7f_ad9d_f300de9405e4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C042R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.969'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/flora/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/media/flora/myros/new_re2_ws/build/octocan'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/media/flora/myros/indy-ros2/install/indy_moveit/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_interfaces/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description')]), 'shell': False}
+[0.673199] (octocan) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.673540] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.sh\n'}
+[0.673643] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/library_path.dsv\n'}
+[0.673727] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/lib/liboctocan.a\n'}
+[0.673818] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/package_run_dependencies/octocan\n'}
+[0.673965] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/parent_prefix_path/octocan\n'}
+[0.674045] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.sh\n'}
+[0.674203] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/ament_prefix_path.dsv\n'}
+[0.674315] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.sh\n'}
+[0.674397] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/environment/path.dsv\n'}
+[0.674506] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.bash\n'}
+[0.674582] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.sh\n'}
+[0.674654] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.zsh\n'}
+[0.674768] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/local_setup.dsv\n'}
+[0.674875] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.dsv\n'}
+[0.674949] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/ament_index/resource_index/packages/octocan\n'}
+[0.675021] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.675130] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.675224] (octocan) StdoutLine: {'line': b'-- Installing: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig.cmake\n'}
+[0.675315] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake/octocanConfig-version.cmake\n'}
+[0.675385] (octocan) StdoutLine: {'line': b'-- Up-to-date: /media/flora/myros/new_re2_ws/install/octocan/share/octocan/package.xml\n'}
+[0.677365] (octocan) CommandEnded: {'returncode': 0}
+[0.701204] (-) TimerEvent: {}
+[0.742744] (octocan) JobEnded: {'identifier': 'octocan', 'rc': 0}
+[0.743949] (nac) JobStarted: {'identifier': 'nac'}
+[0.748646] (re2_flexiforce) JobStarted: {'identifier': 're2_flexiforce'}
+[0.754271] (nac) JobProgress: {'identifier': 'nac', 'progress': 'cmake'}
+[0.755035] (nac) JobProgress: {'identifier': 'nac', 'progress': 'build'}
+[0.756104] (nac) Command: {'cmd': ['/usr/bin/cmake', '--build', '/media/flora/myros/new_re2_ws/build/nac', '--', '-j16', '-l16'], 'cwd': '/media/flora/myros/new_re2_ws/build/nac', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'flora'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/media/flora/myros/new_re2_ws/install/octocan/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/media/flora/myros/indy-ros2/install/indy_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/flora'), ('OLDPWD', '/media/flora/myros/new_re2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('GTK_MODULES', 'gail:atk-bridge'), ('SDL_IM_MODULE', 'fcitx'), ('GLFW_IM_MODULE', 'ibus'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/media/flora/myros/indy-ros2/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'flora'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig'), ('USERNAME', 'flora'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/flora/gems/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt/ros/humble/bin:/home/flora/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/flora/.local/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/wzhou-laptop:@/tmp/.ICE-unix/1706,unix/wzhou-laptop:/tmp/.ICE-unix/1706'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0fe1ca7_c6b3_4a7f_ad9d_f300de9405e4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C042R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.969'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/flora/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/media/flora/myros/new_re2_ws/build/nac'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/media/flora/myros/indy-ros2/install/indy_moveit/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_interfaces/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/media/flora/myros/new_re2_ws/install/octocan:/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description')]), 'shell': False}
+[0.758434] (re2_flexiforce) JobProgress: {'identifier': 're2_flexiforce', 'progress': 'cmake'}
+[0.759962] (re2_flexiforce) Command: {'cmd': ['/usr/bin/cmake', '/media/flora/myros/new_re2_ws/src/re2_flexiforce', '-DCMAKE_INSTALL_PREFIX=/media/flora/myros/new_re2_ws/install/re2_flexiforce'], 'cwd': '/media/flora/myros/new_re2_ws/build/re2_flexiforce', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'flora'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/media/flora/myros/new_re2_ws/install/octocan/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/media/flora/myros/indy-ros2/install/indy_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/flora'), ('OLDPWD', '/media/flora/myros/new_re2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('GTK_MODULES', 'gail:atk-bridge'), ('SDL_IM_MODULE', 'fcitx'), ('GLFW_IM_MODULE', 'ibus'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/media/flora/myros/indy-ros2/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'flora'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/media/flora/myros/new_re2_ws/install/octocan/lib/x86_64-linux-gnu/pkgconfig:/media/flora/myros/new_re2_ws/install/octocan/lib/pkgconfig'), ('USERNAME', 'flora'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/flora/gems/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt/ros/humble/bin:/home/flora/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/flora/.local/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/wzhou-laptop:@/tmp/.ICE-unix/1706,unix/wzhou-laptop:/tmp/.ICE-unix/1706'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0fe1ca7_c6b3_4a7f_ad9d_f300de9405e4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C042R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.969'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/flora/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/media/flora/myros/new_re2_ws/build/re2_flexiforce'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b637d0a7bbe4d72d5730338866bb83ab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/media/flora/myros/indy-ros2/install/indy_moveit/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_interfaces/local/lib/python3.10/dist-packages:/media/flora/myros/indy-ros2/install/indy_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/media/flora/myros/new_re2_ws/install/octocan:/media/flora/myros/indy-ros2/install/indy_moveit:/media/flora/myros/indy-ros2/install/indy_interfaces:/media/flora/myros/indy-ros2/install/indy_gazebo:/media/flora/myros/indy-ros2/install/indy_driver:/media/flora/myros/indy-ros2/install/indy_description')]), 'shell': False}
+[0.777004] (re2_flexiforce) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.791911] (nac) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801311] (-) TimerEvent: {}
+[0.901935] (-) TimerEvent: {}
+[0.929958] (re2_flexiforce) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.948363] (nac) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.966635] (re2_flexiforce) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.970023] (re2_flexiforce) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.977351] (re2_flexiforce) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.981801] (nac) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.984448] (nac) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.989915] (re2_flexiforce) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.990995] (nac) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.001351] (nac) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.002015] (-) TimerEvent: {}
+[1.006234] (re2_flexiforce) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.014732] (nac) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.046818] (re2_flexiforce) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.048715] (re2_flexiforce) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.050676] (nac) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.052307] (nac) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.071075] (re2_flexiforce) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.071561] (nac) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.102132] (-) TimerEvent: {}
+[1.131032] (nac) StdoutLine: {'line': b'-- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.131533] (re2_flexiforce) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.131693] (nac) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.144827] (nac) StdoutLine: {'line': b'-- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.146523] (re2_flexiforce) StdoutLine: {'line': b'-- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.149151] (nac) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.151684] (re2_flexiforce) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.202218] (-) TimerEvent: {}
+[1.232169] (nac) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.234860] (nac) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.236291] (nac) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.237992] (nac) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.247799] (re2_flexiforce) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.248031] (nac) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[1.250324] (nac) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.251090] (re2_flexiforce) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.252711] (re2_flexiforce) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.254331] (re2_flexiforce) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.268245] (re2_flexiforce) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[1.268441] (nac) StdoutLine: {'line': b'-- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[1.270192] (re2_flexiforce) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.278531] (nac) StdoutLine: {'line': b'-- Found rosbag2_storage: 0.15.12 (/opt/ros/humble/share/rosbag2_storage/cmake)\n'}
+[1.290598] (re2_flexiforce) StdoutLine: {'line': b'-- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[1.293073] (re2_flexiforce) StdoutLine: {'line': b'-- Found hardware_interface: 2.42.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[1.302312] (-) TimerEvent: {}
+[1.306245] (nac) StdoutLine: {'line': b'-- Found rosbag2_transport: 0.15.12 (/opt/ros/humble/share/rosbag2_transport/cmake)\n'}
+[1.343069] (nac) StdoutLine: {'line': b'-- Found octocan: 0.0.1 (/media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake)\n'}
+[1.390807] (re2_flexiforce) StdoutLine: {'line': b'-- Found controller_interface: 2.42.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[1.396957] (re2_flexiforce) StdoutLine: {'line': b'-- Found rosbag2: 0.15.12 (/opt/ros/humble/share/rosbag2/cmake)\n'}
+[1.397157] (re2_flexiforce) StdoutLine: {'line': b'-- Found octocan: 0.0.1 (/media/flora/myros/new_re2_ws/install/octocan/share/octocan/cmake)\n'}
+[1.398608] (re2_flexiforce) StdoutLine: {'line': b'-- Found moveit_core: 2.5.5 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[1.402407] (-) TimerEvent: {}
+[1.417226] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.427257] (re2_flexiforce) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.430704] (nac) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.444197] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.452168] (nac) StdoutLine: {'line': b'-- Generating done\n'}
+[1.454756] (nac) StdoutLine: {'line': b'-- Build files have been written to: /media/flora/myros/new_re2_ws/build/nac\n'}
+[1.494794] (nac) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nac\x1b[0m\n'}
+[1.495739] (re2_flexiforce) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.502504] (-) TimerEvent: {}
+[1.516720] (nac) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nac.dir/src/nac_nn_two.cpp.o\x1b[0m\n'}
+[1.602665] (-) TimerEvent: {}
+[1.662293] (re2_flexiforce) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[1.668605] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.697416] (re2_flexiforce) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.702741] (-) TimerEvent: {}
+[1.703275] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.719951] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.754049] (re2_flexiforce) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[1.793819] (re2_flexiforce) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:40 (find_package):\n'}
+[1.794150] (re2_flexiforce) StderrLine: {'line': b'  By not providing "Findtrac_ik_lib.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.794281] (re2_flexiforce) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.794365] (re2_flexiforce) StderrLine: {'line': b'  "trac_ik_lib", but CMake did not find one.\n'}
+[1.794442] (re2_flexiforce) StderrLine: {'line': b'\n'}
+[1.794520] (re2_flexiforce) StderrLine: {'line': b'  Could not find a package configuration file provided by "trac_ik_lib" with\n'}
+[1.794606] (re2_flexiforce) StderrLine: {'line': b'  any of the following names:\n'}
+[1.794684] (re2_flexiforce) StderrLine: {'line': b'\n'}
+[1.794757] (re2_flexiforce) StderrLine: {'line': b'    trac_ik_libConfig.cmake\n'}
+[1.794830] (re2_flexiforce) StderrLine: {'line': b'    trac_ik_lib-config.cmake\n'}
+[1.794905] (re2_flexiforce) StderrLine: {'line': b'\n'}
+[1.794981] (re2_flexiforce) StderrLine: {'line': b'  Add the installation prefix of "trac_ik_lib" to CMAKE_PREFIX_PATH or set\n'}
+[1.795057] (re2_flexiforce) StderrLine: {'line': b'  "trac_ik_lib_DIR" to a directory containing one of the above files.  If\n'}
+[1.795129] (re2_flexiforce) StderrLine: {'line': b'  "trac_ik_lib" provides a separate development package or SDK, be sure it\n'}
+[1.795199] (re2_flexiforce) StderrLine: {'line': b'  has been installed.\n'}
+[1.795269] (re2_flexiforce) StderrLine: {'line': b'\n'}
+[1.795337] (re2_flexiforce) StderrLine: {'line': b'\x1b[0m\n'}
+[1.795404] (re2_flexiforce) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.795482] (re2_flexiforce) StdoutLine: {'line': b'See also "/media/flora/myros/new_re2_ws/build/re2_flexiforce/CMakeFiles/CMakeOutput.log".\n'}
+[1.802841] (-) TimerEvent: {}
+[1.807391] (re2_flexiforce) CommandEnded: {'returncode': 1}
+[1.828572] (re2_flexiforce) JobEnded: {'identifier': 're2_flexiforce', 'rc': 1}
+[1.902971] (-) TimerEvent: {}
+[2.003290] (-) TimerEvent: {}
+[2.103617] (-) TimerEvent: {}
+[2.203948] (-) TimerEvent: {}
+[2.304274] (-) TimerEvent: {}
+[2.404862] (-) TimerEvent: {}
+[2.505188] (-) TimerEvent: {}
+[2.605795] (-) TimerEvent: {}
+[2.706139] (-) TimerEvent: {}
+[2.806479] (-) TimerEvent: {}
+[2.906811] (-) TimerEvent: {}
+[3.007162] (-) TimerEvent: {}
+[3.107557] (-) TimerEvent: {}
+[3.207885] (-) TimerEvent: {}
+[3.308216] (-) TimerEvent: {}
+[3.408546] (-) TimerEvent: {}
+[3.508872] (-) TimerEvent: {}
+[3.609197] (-) TimerEvent: {}
+[3.709523] (-) TimerEvent: {}
+[3.809849] (-) TimerEvent: {}
+[3.910177] (-) TimerEvent: {}
+[4.010527] (-) TimerEvent: {}
+[4.110875] (-) TimerEvent: {}
+[4.211205] (-) TimerEvent: {}
+[4.311532] (-) TimerEvent: {}
+[4.411856] (-) TimerEvent: {}
+[4.512184] (-) TimerEvent: {}
+[4.612509] (-) TimerEvent: {}
+[4.712832] (-) TimerEvent: {}
+[4.813162] (-) TimerEvent: {}
+[4.913492] (-) TimerEvent: {}
+[5.013818] (-) TimerEvent: {}
+[5.114157] (-) TimerEvent: {}
+[5.214480] (-) TimerEvent: {}
+[5.314815] (-) TimerEvent: {}
+[5.415135] (-) TimerEvent: {}
+[5.515456] (-) TimerEvent: {}
+[5.615772] (-) TimerEvent: {}
+[5.716092] (-) TimerEvent: {}
+[5.816413] (-) TimerEvent: {}
+[5.916733] (-) TimerEvent: {}
+[6.017054] (-) TimerEvent: {}
+[6.117374] (-) TimerEvent: {}
+[6.217697] (-) TimerEvent: {}
+[6.318017] (-) TimerEvent: {}
+[6.418355] (-) TimerEvent: {}
+[6.518675] (-) TimerEvent: {}
+[6.618991] (-) TimerEvent: {}
+[6.719330] (-) TimerEvent: {}
+[6.819648] (-) TimerEvent: {}
+[6.919964] (-) TimerEvent: {}
+[7.020283] (-) TimerEvent: {}
+[7.120600] (-) TimerEvent: {}
+[7.220921] (-) TimerEvent: {}
+[7.321240] (-) TimerEvent: {}
+[7.421569] (-) TimerEvent: {}
+[7.521898] (-) TimerEvent: {}
+[7.558883] (nac) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libnac.a\x1b[0m\n'}
+[7.622023] (-) TimerEvent: {}
+[7.690570] (nac) StdoutLine: {'line': b'[100%] Built target nac\n'}
+[7.704773] (nac) JobEnded: {'identifier': 'nac', 'rc': 'SIGINT'}
+[7.715889] (-) EventReactorShutdown: {}

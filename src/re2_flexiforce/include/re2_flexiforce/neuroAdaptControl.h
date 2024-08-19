@@ -1,38 +1,42 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <time.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <signal.h>
+#include <ctime>          // Updated from <time.h>
+#include <cstdlib>        // Updated from <stdlib.h>
+#include <cstdio>         // Updated from <stdio.h>
+#include <csignal>        // Updated from <signal.h>
 #include <unistd.h>
 
-// ROS libs
-#include "ros/ros.h"
-#include "sensor_msgs/JointState.h"
-#include "hebiros/AddGroupFromNamesSrv.h"
-#include "actionlib/client/simple_action_client.h"
-#include "hebiros/TrajectoryAction.h"
-#include "sensor_msgs/Joy.h"
-#include <tf/transform_listener.h>
-#include <tf/transform_datatypes.h>
+// ROS2 libraries
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/joint_state.hpp"
+// #include "hebiros/AddGroupFromNamesSrv.h"  // Uncomment and update when migrating this service to ROS2
+#include "actionlib/client/simple_action_client.h"  // Consider replacing with ROS2 action client
+// #include "hebiros/TrajectoryAction.h"  // Uncomment and update for ROS2 action interface
+#include "sensor_msgs/msg/joy.hpp"
+
+// tf2 and related libraries
 #include <tf2_ros/transform_listener.h>
-#include <geometry_msgs/TransformStamped.h>
+#include <tf2_ros/buffer.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h> // Replaces tf/transform_datatypes.h in ROS2
+
+// KDL libraries
 #include <kdl_parser/kdl_parser.hpp>
-#include <kdl_conversions/kdl_msg.h>
-#include "kdl/frames.hpp"
-#include <geometry_msgs/Pose.h>
-#include <geometry_msgs/Twist.h>
-#include <tf_conversions/tf_kdl.h>
-#include "kdl/chainfksolver.hpp"
-#include "kdl/chainfksolverpos_recursive.hpp"
+#include <kdl/frames.hpp>
+#include <geometry_msgs/msg/pose.hpp>
+#include <geometry_msgs/msg/twist.hpp>
+#include <kdl/chainfksolver.hpp>
+#include <kdl/chainfksolverpos_recursive.hpp>
 #include <kdl/frames_io.hpp>
 #include <kdl/chain.hpp>
 #include <kdl/chainiksolvervel_pinv.hpp>
 #include <kdl/chainiksolverpos_nr.hpp>
 #include <kdl/jacobian.hpp>
 #include <kdl/chainjnttojacsolver.hpp>
-#include <boost/scoped_ptr.hpp>
+
+// Consider replacing boost::scoped_ptr with std::unique_ptr or std::shared_ptr
+#include <memory> // For std::unique_ptr, std::shared_pt
 
 /*
 #include "hebi_cpp_api/lookup.hpp"
@@ -46,7 +50,7 @@
 
 #include "nac_controller/nac_nn_two.h"
 
-using namespace hebiros;
+//using namespace hebiros; //hebiros no longer needed
 const int NUM_OF_JOINTS {6};
 const int NUMBER_OF_JOINTS {6};
 sensor_msgs::JointState jointFeedback;
