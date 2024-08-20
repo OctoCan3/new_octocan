@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "ROS2",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/media/flora/myros/new_re2_ws/install/**",
+                "/media/flora/myros/new_re2_ws/src/**"
+            ],
+            "browse": {
+                "path": [
+                    "/opt/ros/humble/include",
+                    "/media/flora/myros/new_re2_ws/install",
+                    "/media/flora/myros/new_re2_ws/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
