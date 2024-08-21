@@ -11,7 +11,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 // #include "hebiros/AddGroupFromNamesSrv.h"  // Uncomment and update when migrating this service to ROS2
-#include "actionlib/client/simple_action_client.h"  // Consider replacing with ROS2 action client
+#include "rclcpp_action/rclcpp_action.hpp"  // Consider replacing with ROS2 action client
 // #include "hebiros/TrajectoryAction.h"  // Uncomment and update for ROS2 action interface
 #include "sensor_msgs/msg/joy.hpp"
 
@@ -128,3 +128,16 @@ Eigen::MatrixXd nnInpData;
 Eigen::MatrixXd nnOutData;
 Eigen::MatrixXd nnTwistData;
 											                ;
+class NACNode : public rclcpp::Node {
+public:
+    NACNode();
+
+private:
+    void setupMatrices();
+    void cart_callback(const re2_flexiforce::msg::NACInput::SharedPtr msg);
+    void update_control();
+
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_command_publisher;
+    rclcpp::Subscription<re2_flexiforce::msg::NACInput>::SharedPtr cart_subscriber;
+    rclcpp::TimerBase::SharedPtr timer_;
+};
