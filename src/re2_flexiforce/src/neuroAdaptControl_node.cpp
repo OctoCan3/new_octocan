@@ -15,7 +15,6 @@
 // Custom Message for NAC
 #include <re2_flexiforce/NAC_input.h>
 
-
 void joint_callback(sensor_msgs::JointState data){
 
     dxlCurrentPos << data.position[0], data.position[1], data.position[2], 
@@ -113,6 +112,21 @@ void setupMatrices(){
     X_m << 0, 0, 0, 0, 0, 0; 
     Xd_m << 0.0,0.0,0.0,0.0,0.0,0.0;
     Xdd_m << 0,0,0,0,0,0;
+}
+
+NACNode::NACNode() : Node("nac_node") {
+    setupMatrices();
+
+    // Publishers
+    joint_command_publisher = this->create_publisher<sensor_msgs::msg::JointState>("/command/joint_state", 10);
+
+    // Subscribers
+    cart_subscriber = this->create_subscription<re2_flexiforce::msg::NACInput>(
+        "/nac_input", 10, std::bind(&NACNode::cart_callback, this, std::placeholders::_1));
+
+    // Timer
+    timer_ = this->create_wall_timer(
+        std::chrono::milliseconds(3), std::bind(&NACNode::update_control, this));
 }
 
 int main(int argc, char **argv){
