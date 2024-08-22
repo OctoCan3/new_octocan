@@ -135,7 +135,7 @@ public:
 private:
     void setupMatrices();
     void cart_callback(const re2_flexiforce::msg::NACInput::SharedPtr msg);
-    void update_control();
+    void joint_callback(const sensor_msgs::JointState msg);
 
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_command_publisher;
     rclcpp::Subscription<re2_flexiforce::msg::NACInput>::SharedPtr cart_subscriber;
